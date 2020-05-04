@@ -1,5 +1,5 @@
 # react-playground
-My playground to learn react fundamentals (For me only)
+My playground to learn react fundamentals (For me only). Below is the Create React App documentation.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
