@@ -4,8 +4,6 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import {Link} from "react-router-dom";
 
 
-
-
 class LeafletMap extends Component{
     state = {
       boats:this.props.map_data,
