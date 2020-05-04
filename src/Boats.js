@@ -13,7 +13,8 @@ function BoatGrid(props){
           state:{
             boatname:props.name,
             time:props.date,
-            img_src:props.source
+            img_src:props.source,
+            lat_long:props.lat_long
   
           }
         }}
@@ -29,22 +30,23 @@ function BoatGrid(props){
 
 class BoatView extends Component{
 
-    render(){
-      console.log(this.props.location.state);
-      console.log(assets);
-      return(
-        <div>
-        <h1>{this.props.location.state.boatname}</h1>
-        <h2> Time Period: {this.props.location.state.time}</h2>
-        <img alt="boat-img"src={assets[this.props.location.state.img_src]}></img>
-        <button>Playground</button>
-  
-        </div>
-  
-      )
-  
-    }
+  render(){
+    console.log(this.props.location.state);
+    return(
+      <div>
+      <h1>{this.props.location.state.boatname}</h1>
+      <h2> Time Period: {this.props.location.state.time}</h2>
+      <p>Latitude: {this.props.location.state.lat_long[0]} </p>
+      <p>Longitude: {this.props.location.state.lat_long[1]}</p>
+      <img alt="boat-img"src={assets[this.props.location.state.img_src]}></img>
+      <button>Playground</button>
+
+      </div>
+
+    )
+
   }
+}
 
 
 export {BoatGrid,BoatView}
