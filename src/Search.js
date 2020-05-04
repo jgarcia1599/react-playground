@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./Search.css";
-import './map.css';
+import "./css/Search.css";
+import './css/map.css';
 import { Slider, Rail, Handles, Tracks, Ticks } from "react-compound-slider";
-import { SliderRail, Handle, Track, Tick } from "./components"; // example render components - source below
+import { SliderRail, Handle, Track, Tick } from "./aux_scripts/components"; // example render components - source below
 import {BoatGrid} from './Boats';
 
 import {LeafletMap} from './leaflet';
