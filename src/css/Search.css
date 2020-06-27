@@ -47,3 +47,19 @@
       width: 50%;
       height:50%;
   }
+
+  #ind-boat-display{
+    width:50%;
+    height:50%;
+  }
+
+  #boat-main{
+    text-align: center;
+
+
+  }
+
+#boat-p{
+  text-align: left;
+  font-weight: 100;
+}

@@ -80,17 +80,17 @@ class Search extends Component {
 
   };
 
-  filterBoatname = boat =>{
-    console.log(boat.props.name);
-    console.log(this.state.searchValue.startsWith(boat.props.name))
-    if (this.state.searchValue === " "){
-      return boat;
-    }
-    else if (boat.props.name.startsWith(this.state.searchValue)){
-      console.log("im herreee");
-      return boat;
-    }
-  }
+  // filterBoatname = boat =>{
+  //   console.log(boat.props.name);
+  //   console.log(this.state.searchValue.startsWith(boat.props.name))
+  //   if (this.state.searchValue === " "){
+  //     return boat;
+  //   }
+  //   else if (boat.props.name.startsWith(this.state.searchValue)){
+  //     console.log("im herreee");
+  //     return boat;
+  //   }
+  // }
 
   slideronUpdate = event =>{
     var min_date = event[0];

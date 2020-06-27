@@ -8,6 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import {BoatView} from "./Boats"
+import BabylonScene from './babylon';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/boatview" component={BoatView}></Route>
+          <Route path="/model" component={BabylonScene}></Route>
           <Route path="/">
             <Search />
           </Route>
@@ -41,5 +43,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //Leaflet
 // https://leafletjs.com/examples/quick-start/
-//https://www.youtube.com/watch?v=DZfvr2zguHo
+// https://www.youtube.com/watch?v=DZfvr2zguHo
 // Maybe: https://www.youtube.com/watch?v=PMtXhxW6t2k
